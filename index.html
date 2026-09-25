@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modifikasi Pembahasan Soal Latihan Mandiri 1.1</title>
+    <!-- Google Fonts untuk Tipografi Profesional -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Merriweather:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <!-- Konfigurasi MathJax untuk LaTeX -->
+    <script>
+        MathJax = {
+            tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']],
+                displayMath: [['$$', '$$'], ['\\[', '\\]']]
+            },
+            svg: {
+                fontCache: 'global'
+            }
+        };
+    </script>
+    <script type="text/javascript" id="MathJax-script" async
+      src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+    </script>
+
+    <style>
+        /* Desain Print A4 dan CSS Professional */
+        :root {
+            --primary-color: #1E3A8A; /* Dark Blue */
+            --secondary-color: #3B82F6; /* Light Blue */
+            --text-main: #334155; /* Slate 700 */
+            --bg-color: #F8FAFC; /* Slate 50 */
+            --card-bg: #FFFFFF;
+            --border-color: #E2E8F0;
+        }
+        
+        @page {
+            size: A4;
+            margin: 20mm;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            color: var(--text-main);
+            background-color: var(--bg-color);
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            font-size: 11pt;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: var(--card-bg);
+            padding: 40px 50px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+
+        header {
+            border-bottom: 3px solid var(--primary-color);
+            padding-bottom: 15px;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        header h1 {
+            color: var(--primary-color);
+            font-size: 24pt;
+            margin: 0;
+            font-family: 'Merriweather', serif;
+        }
+
+        header p {
+            color: #64748B;
+            font-size: 12pt;
+            margin-top: 5px;
+        }
+
+        .question-card {
+            margin-bottom: 30px;
+            page-break-inside: avoid;
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .question-header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 10px 15px;
+            font-weight: 600;
+            font-size: 12pt;
+        }
+
+        .question-body {
+            padding: 15px;
+            background-color: var(--bg-color);
+            border-bottom: 1px solid var(--border-color);
+            font-weight: 600;
+        }
+
+        .solution-body {
+            padding: 15px;
+            background-color: var(--card-bg);
+        }
+
+        .solution-title {
+            color: var(--secondary-color);
+            font-weight: 700;
+            margin-bottom: 10px;
+            font-size: 11pt;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        ul {
+            margin-top: 5px;
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 6px;
+        }
+
+        .final-answer {
+            margin-top: 15px;
+            padding: 10px;
+            background-color: #EFF6FF;
+            border-left: 4px solid var(--secondary-color);
+            font-weight: 700;
+            color: var(--primary-color);
+        }
+
+        /* Hilangkan bayangan saat di-print */
+        @media print {
+            body { background: white; }
+            .container { box-shadow: none; padding: 0; max-width: 100%; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>Modifikasi Soal Latihan Mandiri</h1>
+        <p>Versi Alternatif & Pembahasan Langkah demi Langkah[span_0](start_span)[span_0](end_span)</p>
+    </header>
+
+    <!-- Soal 1 -->
+    <div class="question-card">
+        <div class="question-header">Soal 1 (Modifikasi Deret Kuadrat)</div>
+        <div class="question-body">
+            Nilai dari $30^{2}-29^{2}+28^{2}-27^{2}+...+4^{2}-3^{2}+2^{2}-1^{2}=....$
+        </div>
+        <div class="solution-body">
+            <div class="solution-title">Penyelesaian:</div>
+            <ul>
+                <li>Gunakan sifat selisih kuadrat $a^{2}-b^{2}=(a-b)(a+b)$[span_1](start_span)[span_1](end_span).</li>
+                <li>Persamaan tersebut dapat dikelompokkan menjadi: $(30^{2}-29^{2})+(28^{2}-27^{2})+...+(2^{2}-1^{2})$[span_2](start_span)[span_2](end_span).</li>
+                <li>Karena $(a-b)=1$ untuk setiap pasangannya, deretnya berubah menjadi deret penjumlahan biasa: $59 + 55 + ... + 3$[span_3](start_span)[span_3](end_span).</li>
+                <li>Jika diuraikan kembali ke bentuk komponennya, ini sama persis dengan $30+29+28+...+2+1$[span_4](start_span)[span_4](end_span).</li>
+                <li>Gunakan rumus jumlah deret aritmetika $S_{n}=\frac{n(n+1)}{2}$[span_5](start_span)[span_5](end_span).</li>
+                <li>$S_{30}=\frac{30 \times 31}{2}= 15 \times 31 = 465$.</li>
+            </ul>
+            <div class="final-answer">Jawaban: 465</div>
+        </div>
+    </div>
+
+    <!-- Soal 2 -->
+    <div class="question-card">
+        <div class="question-header">Soal 2 (Modifikasi Perbandingan Variabel)</div>
+        <div class="question-body">
+            Jika $yz:xz:xy=2:3:4$ maka $\frac{x}{yz}:\frac{y}{xz}=...$
+        </div>
+        <div class="solution-body">
+            <div class="solution-title">Penyelesaian:</div>
+            <ul>
+                <li>Bentuk yang ditanyakan disamakan penyebutnya menjadi $\frac{x^{2}}{xyz}:\frac{y^{2}}{xyz}$[span_6](start_span)[span_6](end_span).</li>
+                <li>Ini berarti perbandingannya hanya bergantung pada nilai $x^{2}:y^{2}$[span_7](start_span)[span_7](end_span).</li>
+                <li>Dari persamaan awal, ambil rasio dua variabel pertama: $\frac{xz}{yz}=\frac{3}{2} \Rightarrow \frac{x}{y}=\frac{3}{2}$[span_8](start_span)[span_8](end_span).</li>
+                <li>Maka nilai rasionya adalah $x^{2}:y^{2}=3^{2}:2^{2}=9:4$[span_9](start_span)[span_9](end_span).</li>
+            </ul>
+            <div class="final-answer">Jawaban: 9:4</div>
+        </div>
+    </div>
+
+    <!-- Soal 3 -->
+    <div class="question-card">
+        <div class="question-header">Soal 3 (Modifikasi Fungsi Polinomial)</div>
+        <div class="question-body">
+            Diketahui fungsi $f(x)=px^{5}+qx^{3}+rx+4$. Jika $f(-5)=10,$ maka nilai dari $f(5)=....$
+        </div>
+        <div class="solution-body">
+            <div class="solution-title">Penyelesaian:</div>
+            <ul>
+                <li>Substitusikan $x=-5$ ke fungsi awal: $p(-5)^{5}+q(-5)^{3}+r(-5)+4=10$[span_10](start_span)[span_10](end_span).</li>
+                <li>Pangkat ganjil akan menghasilkan nilai negatif, sehingga: $-(p5^{5}+q5^{3}+r5)+4=10$[span_11](start_span)[span_11](end_span).</li>
+                <li>Tarik nilai kelompok koefisien tersebut: $-(p5^{5}+q5^{3}+r5)=6 \Rightarrow p5^{5}+q5^{3}+r5=-6$[span_12](start_span)[span_12](end_span).</li>
+                <li>Substitusikan nilai kelompok koefisien ini ke dalam persamaan $f(5)$[span_13](start_span)[span_13](end_span).</li>
+                <li>$f(5)=p5^{5}+q5^{3}+r5+4 = (-6)+4 = -2$[span_14](start_span)[span_14](end_span).</li>
+            </ul>
+            <div class="final-answer">Jawaban: -2</div>
+        </div>
+    </div>
+
+    <!-- Soal 4 -->
+    <div class="question-card">
+        <div class="question-header">Soal 4 (Modifikasi Himpunan Bagian)</div>
+        <div class="question-body">
+            Berapa banyaknya himpunan $X$ yang memenuhi syarat $\{1,3\}\subseteq X \subseteq\{1,2,3,4,5,6\}$?
+        </div>
+        <div class="solution-body">
+            <div class="solution-title">Penyelesaian:</div>
+            <ul>
+                <li>Himpunan $X$ wajib dan pasti memuat angka 1 dan 3 sebagai irisannya[span_15](start_span)[span_15](end_span).</li>
+                <li>Angka yang tersisa dan bebas untuk dikombinasikan adalah $\{2,4,5,6\}$[span_16](start_span)[span_16](end_span).</li>
+                <li>Terdapat 4 angka yang bebas dimasukkan atau tidak dimasukkan. Banyaknya himpunan bagian yang bisa dibentuk dari 4 angka sisa tersebut adalah $2^{4}=16$ himpunan[span_17](start_span)[span_17](end_span).</li>
+            </ul>
+            <div class="final-answer">Jawaban: 16</div>
+        </div>
+    </div>
+
+    <!-- Soal 5 -->
+    <div class="question-card">
+        <div class="question-header">Soal 5 (Modifikasi Pola Barisan)</div>
+        <div class="question-body">
+            Jika $a_{1}=3$, $a_{2}=7$, dan $a_{n+2}=a_{n+1}-a_{n},$ maka berapakah nilai $a_{2025}$?
+        </div>
+        <div class="solution-body">
+            <div class="solution-title">Penyelesaian:</div>
+            <ul>
+                <li>Temukan pola barisannya dengan mendaftar suku-suku awal[span_18](start_span)[span_18](end_span):</li>
+                <li>$a_{1}=3$, $a_{2}=7$, $a_{3}=7-3=4$, $a_{4}=4-7=-3$, $a_{5}=-3-4=-7$, $a_{6}=-7-(-3)=-4$, $a_{7}=-4-(-7)=3$, $a_{8}=3-(-4)=7$[span_19](start_span)[span_19](end_span).</li>
+                <li>Dapat dilihat bahwa pola berulang setiap 6 suku berurutan[span_20](start_span)[span_20](end_span).</li>
+                <li>Bagi 2025 dengan 6: $2025 \div 6 = 337$ dengan sisa bagi 3[span_21](start_span)[span_21](end_span).</li>
+                <li>Karena sisa 3, maka nilai $a_{2025}$ sama dengan suku ke-3 pada pola, yaitu 4[span_22](start_span)[span_22](end_span).</li>
+            </ul>
+            <div class="final-answer">Jawaban: 4</div>
+        </div>
+    </div>
+
+    <!-- Soal 6 -->
+    <div class="question-card">
+        <div class="question-header">Soal 6 (Modifikasi Sisa Bagi dan Aljabar)</div>
+        <div class="question-body">
+            Jika diketahui $x+\frac{1}{x}=-1,$ maka nilai dari $x^{2024}+\frac{1}{x^{2024}}=....$
+        </div>
+        <div class="solution-body">
+            <div class="solution-title">Penyelesaian:</div>
+            <ul>
+                <li>Berdasarkan modifikasi persamaan awal $x+\frac{1}{x}=-1$, akan didapatkan sifat $x^{3}=1$[span_23](start_span)[span_23](end_span).</li>
+                <li>Pecah pangkat 2024 dengan kelipatan 3: $2024 = (3 \times 674) + 2$.</li>
+                <li>Maka $x^{2024} = (x^{3})^{674} \times x^{2} = (1)^{674} \times x^{2} = x^{2}$[span_24](start_span)[span_24](end_span).</li>
+                <li>Persamaan yang dicari menjadi $x^{2}+\frac{1}{x^{2}}$.</li>
+                <li>Nilai ini dapat dicari dari $(x+\frac{1}{x})^{2}-2$.</li>
+                <li>$(-1)^{2} - 2 = 1 - 2 = -1$.</li>
+            </ul>
+            <div class="final-answer">Jawaban: -1</div>
+        </div>
+    </div>
+
+    <!-- Soal 7 -->
+    <div class="question-card">
+        <div class="question-header">Soal 7 (Modifikasi Pencarian Digit Desimal)</div>
+        <div class="question-body">
+            Andaikan $x=0,123456789101112...$ yang angkanya diperoleh dengan menuliskan berurutan dari 1 ke atas. Angka ke-2024 di sebelah kanan tanda desimal adalah ....
+        </div>
+        <div class="solution-body">
+            <div class="solution-title">Penyelesaian:</div>
+            <ul>
+                <li>Hitung akumulasi digit: Angka $1-9$ membutuhkan 9 digit[span_25](start_span)[span_25](end_span).</li>
+                <li>Angka $10-99$ (ada 90 bilangan) membutuhkan $90 \times 2 = 180$ digit[span_26](start_span)[span_26](end_span).</li>
+                <li>Total sisa digit yang masih dibutuhkan untuk mencapai digit ke-2024: $2024 - (9 + 180) = 1835$ digit[span_27](start_span)[span_27](end_span).</li>
+                <li>Karena bilangan bernilai ratusan (100+) memiliki 3 digit, bagi sisa digit dengan 3: $1835 \div 3 = 611$ dengan sisa 2[span_28](start_span)[span_28](end_span).</li>
+                <li>Kita telah melewati 611 bilangan ratusan secara utuh, yaitu hingga bilangan $100 + 611 - 1 = 710$[span_29](start_span)[span_29](end_span).</li>
+                <li>Karena ada sisa 2 digit, maka digit yang kita cari berada pada digit kedua dari bilangan selanjutnya (711)[span_30](start_span)[span_30](end_span).</li>
+                <li>Digit kedua dari "711" adalah 1.</li>
+            </ul>
+            <div class="final-answer">Jawaban: 1</div>
+        </div>
+    </div>
+
+    <!-- Soal 8 -->
+    <div class="question-card">
+        <div class="question-header">Soal 8 (Modifikasi Deret Akar Pecahan)</div>
+        <div class="question-body">
+            Nilai dari $\frac{1}{2\sqrt{1}+1\sqrt{2}}+\frac{1}{3\sqrt{2}+2\sqrt{3}}+...+\frac{1}{16\sqrt{15}+15\sqrt{16}}=....$
+        </div>
+        <div class="solution-body">
+            <div class="solution-title">Penyelesaian:</div>
+            <ul>
+                <li>Rasionalkan bentuk umumnya yaitu $\frac{1}{(n+1)\sqrt{n}+n\sqrt{n+1}}$[span_31](start_span)[span_31](end_span).</li>
+                <li>Faktorkan penyebut menjadi $\sqrt{n(n+1)}(\sqrt{n+1}+\sqrt{n})$ dan kalikan dengan bentuk sekawannya[span_32](start_span)[span_32](end_span).</li>
+                <li>Persamaan tersebut akan menghasilkan bentuk $\frac{1}{\sqrt{n}}-\frac{1}{\sqrt{n+1}}$[span_33](start_span)[span_33](end_span).</li>
+                <li>Deret ini menjadi deret yang saling meniadakan (telescoping sum): $(\frac{1}{\sqrt{1}}-\frac{1}{\sqrt{2}})+...+ (\frac{1}{\sqrt{15}}-\frac{1}{\sqrt{16}})$[span_34](start_span)[span_34](end_span).</li>
+                <li>Semua suku tengah akan habis, menyisakan $1-\frac{1}{\sqrt{16}}$[span_35](start_span)[span_35](end_span).</li>
+                <li>$1-\frac{1}{4} = \frac{3}{4}$.</li>
+            </ul>
+            <div class="final-answer">Jawaban: 3/4</div>
+        </div>
+    </div>
+
+    <!-- Soal 9 -->
+    <div class="question-card">
+        <div class="question-header">Soal 9 (Modifikasi Deret Faktorial)</div>
+        <div class="question-body">
+            Jika $S=1!+2!+3!+...+2024!$, maka angka satuan dari S adalah ....
+        </div>
+        <div class="solution-body">
+            <div class="solution-title">Penyelesaian:</div>
+            <ul>
+                <li>Nilai faktorial mulai dari $5!$ dan seterusnya selalu memiliki angka satuan 0 karena mengandung perkalian $5\times2$[span_36](start_span)[span_36](end_span).</li>
+                <li>Oleh karena itu, angka satuan dari deret S hanya ditentukan oleh hasil penjumlahan $1!$ hingga $4!$[span_37](start_span)[span_37](end_span).</li>
+                <li>$1!+2!+3!+4! = 1+2+6+24=33$[span_38](start_span)[span_38](end_span).</li>
+                <li>Angka satuannya adalah 3[span_39](start_span)[span_39](end_span).</li>
+            </ul>
+            <div class="final-answer">Jawaban: 3</div>
+        </div>
+    </div>
+
+    <!-- Soal 10 -->
+    <div class="question-card">
+        <div class="question-header">Soal 10 (Modifikasi Persamaan Rasio Konstan)</div>
+        <div class="question-body">
+            Jika $\frac{a}{b}=\frac{c}{d}=\frac{e}{f}=81,$ maka nilai $\sqrt{\frac{5a^{2}c-4a^{2}e+e^{3}}{5b^{2}d-4b^{2}f+f^{3}}}=....$
+        </div>
+        <div class="solution-body">
+            <div class="solution-title">Penyelesaian:</div>
+            <ul>
+                <li>Misalkan $k=81$[span_40](start_span)[span_40](end_span).</li>
+                <li>Substitusikan $a=bk,$ $c=dk,$ dan $e=fk$ ke dalam persamaan akar tersebut[span_41](start_span)[span_41](end_span).</li>
+                <li>Pecahan di dalam akar dapat disederhanakan dengan mencoret seluruh variabel pembilang dan penyebutnya, yang akan menyisakan $\sqrt{k^{3}}$[span_42](start_span)[span_42](end_span).</li>
+                <li>$\sqrt{81^{3}}=\sqrt{(9^{2})^{3}}=\sqrt{9^{6}}=9^{3}=729$[span_43](start_span)[span_43](end_span).</li>
+            </ul>
+            <div class="final-answer">Jawaban: 729</div>
+        </div>
+    </div>
+
+    <!-- Soal 11 -->
+    <div class="question-card">
+        <div class="question-header">Soal 11 (Modifikasi Prinsip Sarang Merpati)</div>
+        <div class="question-body">
+            Tentukan bilangan n terkecil sehingga setiap subhimpunan dari $\{1,2,3,...,20\}$ beranggotakan n unsur pasti mengandung setidaknya dua anggota yang berselisih 6.
+        </div>
+        <div class="solution-body">
+            <div class="solution-title">Penyelesaian:</div>
+            <ul>
+                <li>Gunakan Prinsip Sarang Merpati dengan menyusun bilangan ke dalam himpunan rantai berselisih 6[span_44](start_span)[span_44](end_span):</li>
+                <li>$\{1,7,13,19\}$, $\{2,8,14,20\}$, $\{3,9,15\}$, $\{4,10,16\}$, $\{5,11,17\}$, $\{6,12,18\}$.</li>
+                <li>Terdapat 6 himpunan terpisah. Agar tidak ada satupun selisih 6 yang terjadi, maksimal hanya boleh mengambil 2 angka dari masing-masing himpunan.</li>
+                <li>Maksimal total angka yang bisa dipilih tanpa memunculkan selisih 6 adalah $6\times2=12$ angka[span_45](start_span)[span_45](end_span).</li>
+                <li>Maka bilangan minimum n agar pasti ada pasangan selisih 6 adalah $12+1=13$[span_46](start_span)[span_46](end_span).</li>
+            </ul>
+            <div class="final-answer">Jawaban: 13</div>
+        </div>
+    </div>
+
+    <!-- Soal 12 -->
+    <div class="question-card">
+        <div class="question-header">Soal 12 (Modifikasi Sifat Himpunan Saling Lepas)</div>
+        <div class="question-body">
+            Himpunan A dan B saling lepas dan $A\cup B=\{1,2,3,...,9\}$. Hasil perkalian semua unsur A sama dengan jumlah unsur B. Unsur terbesar di dalam himpunan B adalah ....
+        </div>
+        <div class="solution-body">
+            <div class="solution-title">Penyelesaian:</div>
+            <ul>
+                <li>Jumlah seluruh angka $1-9$ adalah 45, sehingga berlaku $S_{A}+S_{B}=45$[span_47](start_span)[span_47](end_span).</li>
+                <li>Diketahui perkalian unsur A sama dengan jumlah unsur B ($P_{A}=S_{B}$), maka persamaannya bisa ditulis $S_{A}+P_{A}=45$[span_48](start_span)[span_48](end_span).</li>
+                <li>Berdasarkan eksplorasi kombinasi nilai, himpunan A yang memenuhi syarat tersebut adalah $\{1,4,8\}$ karena $1+4+8+32=45$[span_49](start_span)[span_49](end_span).</li>
+                <li>Maka sisa angka adalah milik himpunan B yaitu $\{2,3,5,6,7,9\}$[span_50](start_span)[span_50](end_span).</li>
+                <li>Unsur terbesarnya adalah 9.</li>
+            </ul>
+            <div class="final-answer">Jawaban: 9</div>
+        </div>
+    </div>
+
+    <!-- Soal 13 -->
+    <div class="question-card">
+        <div class="question-header">Soal 13 (Modifikasi Stars and Bars)</div>
+        <div class="question-body">
+            Berapakah banyaknya barisan bilangan bulat tak negatif $(x,y,z)$ yang memenuhi persamaan $x+y+z=50$?
+        </div>
+        <div class="solution-body">
+            <div class="solution-title">Penyelesaian:</div>
+            <ul>
+                <li>Kasus ini diselesaikan menggunakan kombinatorika dengan pengulangan (stars and bars)[span_51](start_span)[span_51](end_span).</li>
+                <li>Rumusnya adalah $\binom{n+k-1}{k-1}$ di mana $n=50$ dan jumlah variabel $k=3$[span_52](start_span)[span_52](end_span).</li>
+                <li>$\binom{50+3-1}{3-1}=\binom{52}{2}=\frac{52\times51}{2}=1326$[span_53](start_span)[span_53](end_span).</li>
+            </ul>
+            <div class="final-answer">Jawaban: 1326</div>
+        </div>
+    </div>
+
+    <!-- Soal 14 -->
+    <div class="question-card">
+        <div class="question-header">Soal 14 (Modifikasi Kombinasi Teori Graf)</div>
+        <div class="question-body">
+            Sebanyak n orang pengurus organisasi akan dibagi ke dalam lima komisi dengan ketentuan: (i) set
